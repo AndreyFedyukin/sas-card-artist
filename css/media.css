@@ -1,0 +1,164 @@
+@media (max-width: 1440px) {
+  .bg__grig-top,
+  .bg__grig-bot {
+    max-width: 1292px;
+  }
+
+  .bg__grig-bot {
+    height: 278px;
+    top: -54px;
+  }
+
+  .avatar {
+    margin-bottom: 123px;
+  }
+
+  .container-aux {
+    max-width: 1158px;
+  }
+
+  .avatar__corner-up,
+  .avatar__corner-down {
+    left: -7px;
+  }
+
+  .content {
+    margin-bottom: 71px;
+  }
+
+  .content__wrapper {
+    grid-column-gap: 125px;
+  }
+
+  hr {
+    margin-bottom: 85px;
+  }
+
+  .arts {
+    margin-bottom: 182px;
+  }
+
+  .arts__grid {
+    min-height: 333px;
+  }
+
+  .picking {
+    margin-bottom: 182px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 969px;
+  }
+
+  .header__wrapper {
+    flex-direction: column;
+    padding: 29px 0px 24px;
+  }
+
+  .header__logo {
+    z-index: 5;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .bg__grig-top,
+  .bg__grig-bot {
+    max-width: 924px;
+  }
+
+  .avatar {
+    margin-bottom: 135px;
+  }
+
+  .container-aux {
+    max-width: 922px;
+  }
+
+  .avatar__wrapper {
+    padding-left: 37px;
+  }
+
+  .avatar__corner-up,
+  .avatar__corner-down {
+    left: 0px;
+  }
+
+  .content {
+    margin-bottom: 68px;
+  }
+
+  .content__wrapper {
+    grid-column-gap: 45px;
+  }
+
+  .content__title {
+    font-size: 22px;
+    line-height: 30.8px;
+  }
+
+  .content__text p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  hr {
+    margin-bottom: 65px;
+  }
+
+  .arts {
+    margin-bottom: 128px;
+  }
+
+  .arts__grid {
+    min-height: 270px;
+    gap: 30px;
+  }
+
+  .picking {
+    margin-bottom: 132px;
+  }
+
+  .picking__artists:last-child {
+    display: none;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 37px 0;
+  }
+
+  .footer__navbar {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .footer__copyright {
+    align-self: center;
+    margin: 0;
+    margin-right: 46px;
+  }
+
+  .footer__social {
+    transform: translateY(2px);
+  }
+
+  .social__link {
+    transform: translateY(0px);
+  }
+
+  .social__link:not(:last-child) {
+    margin-right: 15px;
+  }
+}
