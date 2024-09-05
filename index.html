@@ -75,7 +75,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <div class="main__wrapper">
 
         <!-- section avatar ************************* -->
@@ -84,7 +84,7 @@
           <div class="bg__blur"></div>
 
           <div class="avatar">
-            <div class="container container-aux">
+            <div class="container">
               <div class="avatar__wrapper">
 
                 <picture class="avatar-picture">
@@ -158,7 +158,7 @@
         <!-- section content ************************* -->
         <section>
           <div class="content">
-            <div class="container container-aux">
+            <div class="container">
               <div class="content__wrapper">
 
                 <div class="content__case">
@@ -197,14 +197,14 @@
         <!-- section arts ************************* -->
         <section>
           <div class="arts">
-            <div class="container container-aux">
+            <div class="container">
               <div class="arts__wrapper">
 
                 <h3 class="arts__title title">Arts</h3>
 
-                <div class="arts__box-btn">
+                <div class="arts__box">
                   <button class="arts__btn btn">Futurism</button>
-                  <button class="arts__btn btn">Digital Art</button>
+                  <button class="arts__btn btn">Digital</button>
                   <button class="arts__btn btn">Abstract</button>
                   <button class="arts__btn btn">PopArt</button>
                 </div>
@@ -258,13 +258,13 @@
           <div class="picking">
             <div class="bg__grig-bot"></div>
 
-            <div class="container container-aux">
+            <div class="container">
               <div class="picking__wrapper">
 
                 <h3 class="picking__title title">Discover more artists</h3>
 
                 <div class="picking__box">
-                  <div class="picking__artists">
+                  <div class="picking__artists js-artists" id="artists">
                     <a href="https://ya.ru" class="picking__art" target="_blank">
                       <picture class="picking__photo">
                         <source srcset="img/owner-1.avif" type="image/avif">
@@ -277,7 +277,7 @@
                     </a>
                   </div>
 
-                  <div class="picking__artists">
+                  <div class="picking__artists js-artists" id="artists">
                     <a href="https://ya.ru" class="picking__art" target="_blank">
                       <picture class="picking__photo">
                         <source srcset="img/owner-2.avif" type="image/avif">
@@ -290,7 +290,7 @@
                     </a>
                   </div>
 
-                  <div class="picking__artists">
+                  <div class="picking__artists js-artists" id="artists">
                     <a href="https://ya.ru" class="picking__art" target="_blank">
                       <picture class="picking__photo">
                         <source srcset="img/owner-3.avif" type="image/avif">
@@ -303,7 +303,7 @@
                     </a>
                   </div>
 
-                  <div class="picking__artists">
+                  <div class="picking__artists js-artists" id="artists">
                     <a href="https://ya.ru" class="picking__art" target="_blank">
                       <picture class="picking__photo">
                         <source srcset="img/owner-4.avif" type="image/avif">
@@ -316,7 +316,7 @@
                     </a>
                   </div>
 
-                  <div class="picking__artists">
+                  <div class="picking__artists js-artists" id="artists">
                     <a href="https://ya.ru" class="picking__art" target="_blank">
                       <picture class="picking__photo">
                         <source srcset="img/owner-5.avif" type="image/avif">
@@ -338,7 +338,8 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-bg__blur"></div>
+      <div class="footer__blur-1"></div>
+      <div class="footer__blur-2"></div>
 
       <div class="container">
         <div class="footer__wrapper">
@@ -358,7 +359,7 @@
                 <a class="footer__link" href="#" aria-label="Artists" target="_blank">Artists</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#" aria-label="avatar" target="_blank">avatar</a>
+                <a class="footer__link" href="#" aria-label="Events" target="_blank">Events</a>
               </li>
               <li class="footer__item">
                 <a class="footer__link" href="#" aria-label="SAS Wallet" target="_blank">SAS&nbsp;Wallet</a>
@@ -372,12 +373,12 @@
             </ul>
           </nav>
 
-          <a href="https://ya.ru" class="footer__copyright" target="_blank" aria-label="Copyright">
+          <p class="footer__copyright" aria-label="Copyright">
             &copy;&nbsp;2024&nbsp;«SAS&nbsp;Metagallery»
-          </a>
+          </p>
 
           <div class="footer__social">
-            <a href="#" class="social__link social" target="_blank" aria-label="Social network X">
+            <a href="#" class="social__link" target="_blank" aria-label="Social network X">
               <svg class="svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -386,7 +387,7 @@
               </svg>
             </a>
 
-            <a href="#" class="social__link social" target="_blank" aria-label="Social network Instagram">
+            <a href="#" class="social__link" target="_blank" aria-label="Social network Instagram">
               <svg class="svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -401,6 +402,7 @@
               </svg>
             </a>
           </div>
+
         </div>
       </div>
     </footer>

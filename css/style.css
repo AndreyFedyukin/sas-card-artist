@@ -52,6 +52,7 @@ video {
   --color-white: rgb(255, 255, 255);
   --color-subtitle: rgb(255, 255, 255);
   --color--text: rgba(255, 255, 253, 0.6);
+  --colod--text: rgb(165, 173, 192);
   --color-black: rgb(0, 0, 0);
   --color-black-transparency: rgba(0, 0, 0, 0.7);
   --color-grey: rgba(255, 255, 253, 0.72);
@@ -181,7 +182,7 @@ body {
   }
 }
 
-/* burger ************************* */
+/* burger ******************* */
 .header__burger {
   width: 24px;
   min-width: 24px;
@@ -270,6 +271,10 @@ body {
 }
 
 /* main ************************* */
+.main {
+  width: 100%;
+  min-height: calc(100svh - 150px);
+}
 .main__wrapper {
   width: 100%;
   padding-top: 130px;
@@ -348,6 +353,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 40px;
 }
 
 .avatar__title {
@@ -360,7 +366,6 @@ body {
   text-align: left;
   letter-spacing: 1px;
   z-index: 0;
-  margin-left: 40px;
 }
 
 .avatar__social {
@@ -383,7 +388,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 132px;
+  grid-column-gap: 157px;
   grid-row-gap: 0px;
   align-items: center;
   margin: 0 auto;
@@ -404,26 +409,26 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   border-left: 2px solid var(--color-lime);
-  padding-left: 58px;
+  padding-left: 72px;
 }
 
 .content__title {
   color: var(--color-subtitle);
   font-family: "Unbounded", sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33.6px;
+  font-size: 30px;
+  line-height: 140%;
   text-align: left;
-  margin-bottom: 23px;
+  margin-bottom: 28.69px;
 }
 
 .content__text p {
   color: var(--color--text);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 25.6px;
-  margin-bottom: 10px;
+  font-size: 19.96px;
+  line-height: 160%;
+  letter-spacing: -0.1px;
 }
 
 .content__picture {
@@ -464,8 +469,8 @@ hr {
   margin-bottom: 24px;
 }
 
-.arts__box-btn {
-  margin-bottom: 39px;
+.arts__box {
+  margin-bottom: 38px;
 }
 
 .arts__btn {
@@ -479,7 +484,6 @@ hr {
   background-color: var(--color-btn-bg);
   border: 1px solid var(--color-btn-bg);
   padding: 14px 23.7px;
-  margin-right: 26px;
 
   &:focus {
     background-color: var(--color-btn-hover-bg);
@@ -498,6 +502,10 @@ hr {
     color: var(--color-btn-hover-text);
     border: 1px solid var(--color-btn-hover-text);
   }
+}
+
+.arts__btn:not(:last-child) {
+  margin-right: 26px;
 }
 
 /* grid ************************* */
@@ -529,11 +537,6 @@ hr {
   margin-bottom: 207px;
 }
 
-.picking__wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .bg__grig-bot {
   width: 100%;
   max-width: 1600px;
@@ -554,6 +557,7 @@ hr {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin: 0 auto;
 }
 
 .picking__title {
@@ -571,6 +575,7 @@ hr {
 .picking__artists {
   width: 100%;
   max-width: max-content;
+  margin: 0;
 }
 
 .picking__art {
@@ -618,6 +623,11 @@ hr {
   color: var(--color-white);
   color: #fffffd;
   transition: color 0.3s;
+}
+
+.dell {
+  display: none;
+  visibility: hidden;
 }
 
 /* section modal window ************************* */
@@ -690,11 +700,11 @@ hr {
   border-top: 1px solid var(--color-line);
 }
 
-.footer-bg__blur {
+.footer__blur-1 {
   width: 100%;
-  max-width: 100svw;
-  height: 650px;
-  background-image: url(../img/svg/blur-footer.svg);
+  max-width: 1080px;
+  height: 600px;
+  background-image: url(../img/svg/bgf-1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -702,6 +712,22 @@ hr {
   bottom: 0;
   left: 0;
   z-index: -1;
+  margin: 0 auto;
+}
+
+.footer__blur-2 {
+  width: 100%;
+  max-width: 900px;
+  height: 630px;
+  background-image: url(../img/svg/bgf-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: 0 auto;
 }
 
 .footer__wrapper {
@@ -720,11 +746,11 @@ hr {
 }
 
 .footer__link {
+  color: var(--color-white);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: var(--color-white);
   border-bottom: 2px solid transparent;
   transition: color 0.3s;
 
@@ -744,10 +770,10 @@ hr {
 
 .footer__copyright {
   font-family: "Roboto", sans-serif;
+  color: var(--color-lime);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: var(--color-lime);
   margin: 0 1em;
 }
 

@@ -160,3 +160,45 @@ modalImg.forEach((element) => {
     bodyImg.dataset.position = "";
   });
 });
+
+//! Удираем последний блок
+let elem = document.querySelector(".js-artists");
+
+// Добавляем обработчик события для изменения отступа
+elem.addEventListener("scroll", function () {
+  // Получаем текущий отступ
+  let currentMargin = window
+    .getComputedStyle(elem)
+    .getPropertyValue("margin-right");
+
+  // Преобразуем отступ в число, удалив единицу измерения
+  let marginValue = parseFloat(currentMargin.replace(/[^0-9.]/g, ""));
+
+  // Если отступ больше или равен 50px, добавляем класс
+  if (marginValue >= 50) {
+    elem.classList.add(".dell");
+  } else {
+    // Если отступ меньше 50px, удаляем класс
+    elem.classList.remove(".dell");
+  }
+});
+
+// !test
+// document.getElementById("myElement").addEventListener("click", function () {
+//   this.classList.add("myClass");
+// });
+
+// !test2
+// let myBlock = document.getElementById("myBlock");
+// let initialPadding = window
+//   .getComputedStyle(myBlock)
+//   .getPropertyValue("padding-left");
+
+// window.addEventListener("scroll", function () {
+//   let scrollPosition = window.pageYOffset;
+//   if (scrollPosition > 100) {
+//     myBlock.classList.add("active");
+//   } else {
+//     myBlock.classList.remove("active");
+//   }
+// });
