@@ -386,15 +386,6 @@ body {
   &:not(:last-child) {
     margin-right: 16px;
   }
-  &:focus {
-    color: var(--color-white);
-  }
-  &:hover {
-    color: var(--color-lime);
-  }
-  &:active {
-    color: var(--color-lime);
-  }
 }
 
 /* section content ************************* */
@@ -814,13 +805,16 @@ body {
   &:not(:last-child) {
     margin-right: 16px;
   }
-  &:focus {
-    color: var(--color-white);
-  }
-  &:hover {
+}
+
+@media (hover: hover) {
+  a:hover {
     color: var(--color-lime);
   }
-  &:hover {
+}
+
+@media (hover: none) {
+  a:active {
     color: var(--color-lime);
   }
 }
