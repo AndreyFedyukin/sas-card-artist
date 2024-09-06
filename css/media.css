@@ -48,7 +48,7 @@
     font-size: 17.12px;
   }
 
-  hr {
+  .line {
     margin-bottom: 86px;
   }
 
@@ -132,7 +132,7 @@
     line-height: 160%;
   }
 
-  hr {
+  .line {
     margin-bottom: 65px;
   }
 
@@ -343,7 +343,7 @@
 
   /* !content ************************************** */
   .content {
-    margin-bottom: 61px;
+    margin-bottom: 40px;
   }
 
   .content__wrapper {
@@ -383,7 +383,7 @@
     letter-spacing: normal;
   }
 
-  hr {
+  .line {
     margin-bottom: 24px;
   }
 
@@ -472,6 +472,7 @@
 
   .container {
     max-width: 500px;
+    padding: 0 26px;
   }
 
   .header__logo {
@@ -547,6 +548,10 @@
   }
 
   /* !content ************************************** */
+  .content {
+    margin-bottom: 61px;
+  }
+
   .content__title {
     font-size: 16px;
     letter-spacing: 1.2px;
@@ -618,7 +623,6 @@
 @media (max-width: 360px) {
   .container {
     max-width: 360px;
-    padding: 0 26px;
   }
 
   .bg__grig-top,

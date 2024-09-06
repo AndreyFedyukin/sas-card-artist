@@ -65,8 +65,7 @@ video {
   --color-btn-hover-bg: transparent;
   --color-modal-menu: rgb(138, 43, 226);
   --color-bg-card: rgb(15, 24, 46);
-  --color-header-hr: rgba(255, 255, 255, 0.4);
-  --color-hr: #0eabef;
+  --color-hr: rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -124,8 +123,8 @@ body {
 .header__hr {
   width: 100%;
   display: none;
-  color: var(--color-hr);
-  background-color: var(--color-hr);
+  border: none;
+  border-top: 1px solid var(--color-hr);
 }
 
 .header__wallet {
@@ -440,10 +439,10 @@ body {
   border-radius: 16px;
 }
 
-hr {
+.line {
   width: 100%;
   border: none;
-  border-top: 1px solid var(--color-hr);
+  border-top: 1px solid var(--color-line);
   margin-bottom: 109px;
 }
 
@@ -510,7 +509,7 @@ hr {
 }
 
 .arts__btn:not(:last-child) {
-  margin-right: 26px;
+  margin-right: 30px;
 }
 
 /* grid ************************* */
