@@ -334,11 +334,12 @@
   .avatar__title {
     font-size: 40.39px;
     line-height: 56.55px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .avatar__social {
     padding: 0;
+    align-self: flex-start;
   }
 
   /* !content ************************************** */

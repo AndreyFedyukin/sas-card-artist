@@ -374,8 +374,21 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  align-self: flex-end;
   padding-bottom: 6px;
+}
+
+.avatar__social-link {
+  color: var(--color-white);
+  transition: color 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+  &:hover {
+    color: var(--color-lime);
+  }
 }
 
 /* section content ************************* */
