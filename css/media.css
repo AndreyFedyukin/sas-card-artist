@@ -402,13 +402,15 @@
   .arts__box {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    grid-row-gap: 8px;
     justify-content: center;
     margin-bottom: 29px;
   }
 
   .arts__btn {
     padding: 5.5px 16px;
+    margin: 0;
   }
 
   .arts__btn:not(:last-child) {
@@ -555,6 +557,58 @@
     line-height: 22px;
   }
 
+  /* !arts ************************************** */
+  .arts {
+    margin-bottom: 52px;
+  }
+
+  .arts__btn:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  .arts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* !picking ************************************** */
+  .picking {
+    margin-bottom: 35px;
+  }
+
+  .picking__title {
+    font-size: 23.25px;
+    line-height: 31px;
+    letter-spacing: -0.2px;
+    margin-bottom: 19px;
+  }
+
+  .picking__box {
+    flex-direction: column;
+  }
+
+  .picking__artists {
+    margin-bottom: 20px;
+  }
+
+  .picking__photo {
+    margin-right: 11px;
+  }
+
+  .picking__photo-img {
+    max-width: 42.33px;
+    max-height: 42.33px;
+  }
+
+  .picking__prof {
+    font-size: 12.35px;
+    line-height: 160%;
+  }
+
+  .picking__name {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
   /* !footer ************************************** */
   .footer__wrapper {
     padding: 32px 0px;
@@ -564,7 +618,7 @@
 @media (max-width: 360px) {
   .container {
     max-width: 360px;
-    padding: 0 27px;
+    padding: 0 26px;
   }
 
   .bg__grig-top,
@@ -573,10 +627,26 @@
     max-height: 402px;
   }
 
+  .bg__grig-bot {
+    max-height: 248px;
+    top: -15px;
+  }
+
   .avatar__wrapper,
-  .content__wrapper,
+  .content__wrapper {
+    max-width: 305px;
+  }
+
   .arts__wrapper,
   .picking__wrapper {
-    max-width: 305px;
+    max-width: 308px;
+  }
+
+  .arts__box {
+    margin-bottom: 30px;
+  }
+
+  .arts__title {
+    margin-bottom: 12px;
   }
 }

@@ -470,6 +470,11 @@ hr {
 }
 
 .arts__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-row-gap: 30px;
+  justify-content: flex-start;
   margin-bottom: 38px;
 }
 
