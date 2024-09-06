@@ -534,6 +534,7 @@
   }
 
   .avatar__social {
+    align-self: center;
     padding: 0;
   }
 
