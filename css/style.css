@@ -386,7 +386,13 @@ body {
   &:not(:last-child) {
     margin-right: 16px;
   }
+  &:focus {
+    color: var(--color-white);
+  }
   &:hover {
+    color: var(--color-lime);
+  }
+  &:active {
     color: var(--color-lime);
   }
 }
@@ -803,6 +809,7 @@ body {
 .social__link {
   color: var(--color-white);
   transform: translateY(2px);
+  transition: color 0.3s;
 
   &:not(:last-child) {
     margin-right: 16px;
@@ -813,7 +820,7 @@ body {
   &:hover {
     color: var(--color-lime);
   }
-  &:active {
-    color: var(--color-white);
+  &:hover {
+    color: var(--color-lime);
   }
 }
