@@ -161,7 +161,22 @@ modalImg.forEach((element) => {
   });
 });
 
-//! Удираем последний блок
+//! Выбираем кнопки
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function () {
+    if (this.style.backgroundColor === 'transparent') {
+      this.style.backgroundColor = '#d6ef0e';
+      this.style.color = 'black';
+    } else {
+      this.style.backgroundColor = 'transparent';
+      this.style.color = '#d6ef0e';
+    }
+  });
+});
+
+//! Убираем последний блок
 let elem = document.querySelector(".js-artists");
 
 // Добавляем обработчик события для изменения отступа
@@ -182,23 +197,3 @@ elem.addEventListener("scroll", function () {
     elem.classList.remove(".dell");
   }
 });
-
-// !test
-// document.getElementById("myElement").addEventListener("click", function () {
-//   this.classList.add("myClass");
-// });
-
-// !test2
-// let myBlock = document.getElementById("myBlock");
-// let initialPadding = window
-//   .getComputedStyle(myBlock)
-//   .getPropertyValue("padding-left");
-
-// window.addEventListener("scroll", function () {
-//   let scrollPosition = window.pageYOffset;
-//   if (scrollPosition > 100) {
-//     myBlock.classList.add("active");
-//   } else {
-//     myBlock.classList.remove("active");
-//   }
-// });
