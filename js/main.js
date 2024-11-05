@@ -162,16 +162,16 @@ modalImg.forEach((element) => {
 });
 
 //! Выбираем кнопки
-const buttons = document.querySelectorAll('.btn');
+const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach(button => {
-  button.addEventListener('click', function () {
-    if (this.style.backgroundColor === 'transparent') {
-      this.style.backgroundColor = '#d6ef0e';
-      this.style.color = 'black';
+  button.addEventListener("click", function () {
+    if (this.style.backgroundColor === "transparent") {
+      this.style.backgroundColor = "#d6ef0e";
+      this.style.color = "black";
     } else {
-      this.style.backgroundColor = 'transparent';
-      this.style.color = '#d6ef0e';
+      this.style.backgroundColor = "transparent";
+      this.style.color = "#d6ef0e";
     }
   });
 });
